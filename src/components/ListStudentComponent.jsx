@@ -1,10 +1,5 @@
 import React, {useState, useEffect} from "react";
 import StudentService from "../services/StudentService";
-import axios from "axios";
-
-
-const baseURL= "http://localhost:8080/api/v1/";
-//const baseURL= "http://localhost:8080/api/v1/search/2";
 
 export default function ListStudentComponent(props){
 
@@ -12,7 +7,7 @@ export default function ListStudentComponent(props){
 
     useEffect(()=>{
        
-        axios.get(baseURL)
+        StudentService.getAllStudents()
         .then(res=>{
             console.log(res);
             setStudent(res.data);
