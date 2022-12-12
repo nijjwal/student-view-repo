@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import ListStudentComponent from './components/ListStudentComponent';
+import CreateStudent from './components/CreateStudent';
 
 function App() {
   return (
     <div>
-      Welcome to student management system!
       <ListStudentComponent/>
+      <CreateStudent/>
     </div>
   );
 }

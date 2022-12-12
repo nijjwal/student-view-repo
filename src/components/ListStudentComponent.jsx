@@ -20,6 +20,7 @@ export default function ListStudentComponent(props){
 
     return(
         <div>
+            <h1>List Existing Students</h1>
             <ul>
                 {
                     students.map(student=> <li key={student.id}>{student.firstname}</li>)
